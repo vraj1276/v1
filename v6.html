@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  *{
+   box-sizing:border-box;
+  } 
+  .zoom {
+   padding: 40px;
+   background-color: orange;
+   width: 100px;
+   height: 100px;
+  transition: transform .2s;
+   margin: 0 auto;
+    }
+    .zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+  </style>
+ </head>
+ <body>
+  <H1> Zoom on Hover </H1>
+  <p> Hover over the div element </p>
+  <div class="zoom"> </div>
+ </body>
+</html>

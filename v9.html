@@ -1,0 +1,199 @@
+<!Doctype html>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+   .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+   }  
+   .color hover:image {
+filter: grayscale(0%);
+filter: rgb(246, 243, 243);
+-webkit-filter: grayscale(20%);
+filter: none;
+transition: 1s ease;
+} 
+.fadein img{
+opacity:0.5;
+transition: 1s ease;
+}
+.fadein img:hover{
+opacity:1;
+transition: 1s ease;
+}
+.grow img{
+transition: 1s ease;
+}
+.grow img:hover{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+}
+.shrink img {
+transition: 1s ease;
+}
+.shrink img:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+}
+.circle img {
+transition: 1s ease;
+}
+.circle img:hover {
+border-radius:50%;
+transition: 1s ease;
+}
+.shadow img {
+transition: .5s ease;
+}
+.shadow img:hover{
+box-shadow:
+1px 1px #373737,
+2px 2px #373737,
+3px 3px #373737,
+4px 4px #373737,
+5px 5px #373737,
+6px 6px #373737;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+transition: .5s ease;
+} 
+.border img {
+transition: .5s ease;
+}
+.border img:hover{
+box-shadow: 0 0 0 10px #000000;
+transition: .5s ease;
+}
+.blur img{
+transition: 1s ease;
+}
+.blur img:hover {
+-webkit-filter: blur(5px);
+transition: 1s ease;
+}
+.rotate img{
+transition: 1s ease;
+}
+.rotate img:hover{
+-webkit-transform: rotateZ(-10deg);
+-ms-transform: rotateZ(-10deg);
+transform: rotateZ(-10deg);
+transition: 1s ease;
+}
+.brighten img {
+-webkit-filter: brightness(50%);
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+.brighten img:hover {
+-webkit-filter: brightness(100%);
+}
+
+.middle {
+ transition: .5s ease;
+ opacity: 0;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ text-align: center;
+}
+.image {
+ opacity: 0.3;
+} 
+ .middle {
+ opacity: 0.2;
+} 
+.text {
+ background-color:green;
+ color: rgb(245, 7, 7);
+ font-size: 16px;
+ padding: 16px 32px;
+} 
+ </style>
+ </head>
+ <body>
+ <h1> 	Grayscale To Color CSS </h1>
+ <div class="color">
+   <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="jpg" class="color">
+   <div class="middle">
+      <div class="text"> Grayscale </div>
+    </div>
+ </div>
+ <h2>	Fade In Image CSS</h2>
+ <div class=”fadein”>
+   <img src="https://1.bp.blogspot.com/-kK7Fxm7U9o0/YN0bSIwSLvI/AAAAAAAACFk/aF4EI7XU_ashruTzTIpifBfNzb4thUivACLcBGAsYHQ/s1280/222.jpg" alt="jpg" class="fadein">
+   <div class="middle">
+      <div class="text"> Fadein </div>
+   </div> 
+ </div>
+ <h2>	Grow Image CSS</h2>
+ <div class="grow">
+   <img src="https://i.pinimg.com/736x/ea/6c/af/ea6cafb6cba643b6a0c98280f5adb6c0.jpg" alt="jpg" class="grow">
+   <div class="middle">
+      <div class="text"> Grow </div>
+   </div>
+ </div>
+ <h2>	Shrink Image CSS</h2>
+<div class="shrink">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIX4fdymadei7FiL-19pxFAWPLEJgQlNEww&usqp=CAU" alt="image" class="shrink">
+   <div class="middle">
+      <div class="text"> Shrink </div>
+   </div>
+</div>
+<h2>	Square to Circle CSS</h2>
+<div class="circle">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGpBUAHde0OvcsZoCvEEtW9jy5q2-lXqH89tSXm5HYt7oaMjPJJP183DqSiSkf6wnYf1w&usqp=CAU" alt="image" class="circle">
+   <div class="middle">
+      <div class="text"> Circle </div>
+   </div>
+</div>
+<h1> 	3D Shadow CSS</h1>
+<div class="shadow">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhdbII7TU17tJ6pQ9B-DttwPzo_IMHup50pkvTN03aiQodwxKl8oy2_CCOfzKiJ2A-uNs&usqp=CAU" alt="image" class="shadow">
+   <div class="middle">
+      <div class="text"> Shadow</div>
+   </div>
+</div>
+<h2>	Add Border To Image CSS</h2>
+<div class=”border”>
+   <img src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?cs=srgb&dl=pexels-pixabay-206359.jpg&fm=jpg" alt="jpg" class="Border">
+   <div class="middle">
+      <div class="text"> Border Image </div>
+   </div>
+</div>
+<h2>	Blur Image CSS</h2>
+<div class=”blur”>
+   <img class="background" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkYlXx_eJGswdLUX9tdPQnj40C5dGLqFOlIBCWNcpcQddck9kchCCZs1xRyKRgldTmfmM&usqp=CAU" alt="image">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkYlXx_eJGswdLUX9tdPQnj40C5dGLqFOlIBCWNcpcQddck9kchCCZs1xRyKRgldTmfmM&usqp=CAU" alt="image" class="blur">
+   <div class="middle">
+      <div class="text"> Blur image </div>
+   </div>
+</div>
+<h1>	Tilt Image CSS</h1>
+<div class=”rotate”>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-5EknyQAeVMcfC9Oqqi7eQh-xEk2uO89TA&usqp=CAU" alt="image" class="Tilt">
+   <div class="middle">
+      <div class="text"> Rotate </div>
+   </div>
+</div>
+<h2> Brighten Image CSS</h2>
+<div class=”brighten”>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLTtGr4ioiMSpfqCXOAoby9I8E36r-iX0EdG9wz6cxXNtmsoP9votwvp1uxztB1B4WPgs&usqp=CAU" alt="image" class="brighten">
+   <div class="middle">
+      <div class="text"> Brighten </div>
+   </div>
+</div>
+ </body>
+</html>

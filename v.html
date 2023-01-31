@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>CSS media query</title>
+    <style>
+    body {
+        text-align: center;
+    }
+     
+    .gfg {
+        font-size: 40px;
+        font-weight: bold;
+        color: green;
+    }
+     
+    @media screen and (max-width:800px) {
+        body {
+            text-align: center;
+            background-color: green;
+        }
+        .gfg {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+        .geeks {
+            color: white;
+        }
+    }
+     
+    @media screen and (max-width:500px) {
+        body {
+            text-align: center;
+            background-color: blue;
+        }
+    }
+    </style>
+</head>
+ 
+<body>
+    <div class="gfg">Media Screening Effect</div>
+    <div class="geeks">The Media query in CSS is used to create a responsive web design. It means that the view of a web page differs from system to system based on screen or media types. The breakpoint specifies for what device-width size, the content is just starting to break or deform.</div>
+</body>
+ 
+</html>
